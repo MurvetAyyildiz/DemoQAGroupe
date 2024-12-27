@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TextBoxPage {
-    public TextBoxPage (){
+public class TextBoxMurvetPage {
+    public TextBoxMurvetPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy (xpath = "//span[text()='Text Box']")

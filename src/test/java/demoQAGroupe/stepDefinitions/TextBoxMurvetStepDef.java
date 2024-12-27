@@ -1,7 +1,7 @@
 package demoQAGroupe.stepDefinitions;
 
 import demoQAGroupe.pages.ElementPage;
-import demoQAGroupe.pages.TextBoxPage;
+import demoQAGroupe.pages.TextBoxMurvetPage;
 import demoQAGroupe.utilities.ConfigReader;
 import demoQAGroupe.utilities.Driver;
 import demoQAGroupe.utilities.JSUtils;
@@ -11,10 +11,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class TextBoxStepDef {
+public class TextBoxMurvetStepDef {
 
       ElementPage elementPage =new ElementPage();
-      TextBoxPage textBoxPage =new TextBoxPage();
+      TextBoxMurvetPage textBoxPage =new TextBoxMurvetPage();
     @Given("L utilisateur ouvre l application et va à la page de textBox")
     public void lUtilisateurOuvreLApplicationEtVaÀLaPageDeTextBox() {
         Driver.getDriver().get(ConfigReader.getProperty("demoqaUrl"));
