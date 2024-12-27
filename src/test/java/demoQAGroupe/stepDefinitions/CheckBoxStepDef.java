@@ -3,6 +3,7 @@ package demoQAGroupe.stepDefinitions;
 import demoQAGroupe.pages.ElementPage;
 import demoQAGroupe.utilities.ConfigReader;
 import demoQAGroupe.utilities.Driver;
+import demoQAGroupe.utilities.JSUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,7 +15,8 @@ public class CheckBoxStepDef {
 
     @Given("L utilisateur ouvre l application et va à la page de checkbox")
     public void lUtilisateurOuvreLApplicationEtVaÀLaPageDeCheckbox() {
-        Driver.getDriver().get(ConfigReader.getProperty("demoqaUrl"));
+      Driver.getDriver().get(ConfigReader.getProperty("demoqaUrl"));
+        JSUtils.JSscrollIntoView(elementPage.element);
         elementPage.element.click();
         elementPage.checkBox.click();
 
@@ -46,4 +48,5 @@ public class CheckBoxStepDef {
     public void fermerLApplication() {
         Driver.closeDriver();
     }
+
 }
