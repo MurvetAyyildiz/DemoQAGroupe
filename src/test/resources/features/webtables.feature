@@ -21,6 +21,7 @@
    Given donné que je suis sur la page Web Tables
    When je clique sur le bouton Add, je remplis Prénom avec Caty, Nom de famille avec Doek,Âge avec 35, Email avec catydoek@example.com, Salaire avec 38000,Département avec IT et je clique sur Submit
    Then je devrais voir John Doe dans la table
+     And  Verifier les colonnes
 
 
 
