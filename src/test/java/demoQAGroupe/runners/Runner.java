@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = {"demoQAGroupe/stepDefinitions","demoQAGroupe/hooks"},
-        tags = "@US02CheckBox",
+        tags = "@RadioButton",
         dryRun = false,  //==> eger true secilirse scanariolari calistirmadan feature file daki
         // eksik step defeinitonlarin olup olmadigini kontrol eder, ve browser'i calistirmaz
         monochrome = false
