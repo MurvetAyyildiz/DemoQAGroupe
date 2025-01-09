@@ -1,9 +1,9 @@
 
-
+@Practice
 
   Feature: Web tables herokuapp
 
-    @Practice
+
     Scenario: TC01 Tests de web tables
       Given Ouvrir la page de herokuapp
      Then Verifier les informations visibles
