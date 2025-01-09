@@ -13,3 +13,6 @@ Feature: US03 Radio Button Test
     When utilisateur accede à la page et clique sur le boutton impressive
     And test si le bouton impressive fonctionne
     And fermer la page
+
+
+  #yes ve impressive radiobuttonlarin locate ini label dan alinca calisti

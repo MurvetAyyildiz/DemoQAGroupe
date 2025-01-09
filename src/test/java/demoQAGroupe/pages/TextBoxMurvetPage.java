@@ -11,6 +11,8 @@ public class TextBoxMurvetPage {
     }
     @FindBy (xpath = "//span[text()='Text Box']")
     public WebElement textBoxButton;
+
+
     @FindBy(id="userName")
     public WebElement fullNameBox;
 
@@ -27,6 +29,8 @@ public class TextBoxMurvetPage {
     public WebElement outputElement;
     @FindBy(xpath ="(//div[contains(@class,'top-card')]/div)[1]")
     public WebElement elementTitle;
+
+
 
 
 }

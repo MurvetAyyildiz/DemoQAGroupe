@@ -23,35 +23,17 @@ public class ElementPage {
 
 
 
-
-
-
-
     @FindBy(xpath = "(//*[@id='item-2'])[1]" )
     public WebElement   radioBox;
 
-    @FindBy(xpath = "//*[@id='yesRadio']" )
+    @FindBy(xpath = "//label[@for='yesRadio']" )
     public WebElement checkYes;
 
     @FindBy(xpath = "//span[@class='text-success']")
     public WebElement textSuccess;
 
-    @FindBy(id = "impressiveRadio" )
+    @FindBy(xpath = "//label[@for='impressiveRadio']" )
     public WebElement checkImpressive;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -111,5 +93,10 @@ public WebElement firstName;
 
     @FindBy(xpath = "(//ol)[2]")
     public List<WebElement> checkboxMainElements;
+    @FindBy (xpath = "//span[text()='Buttons']")
+    public WebElement buttonsBoxButton;
+    @FindBy (xpath = "//span[text()='Links']")
+    public WebElement linksBoxButton;
+
 
 }

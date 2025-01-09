@@ -32,6 +32,7 @@ public class CheckBoxStepDef {
 
     @And("When L'utilisateur clique sur le bouton + à côté du dossier Documents")
     public void whenLUtilisateurCliqueSurLeBoutonÀCôtéDuDossierDocuments() {
+        JSUtils.JSscrollIntoView(elementPage.plusIconeDeCheckBox);
         elementPage.plusIconeDeCheckBox.click();
 
     }
